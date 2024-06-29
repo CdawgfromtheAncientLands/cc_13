@@ -71,6 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
         errorElement.style.display = 'none';
     }
 
+    function loadProducts() {
+        try {
+            hideLoading();
+            hideError();
+            displayProduct();
+        } catch (error) {
+            showError();
+            hideLoading();
+        }
+    }
 
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + products.length) % products.length;
