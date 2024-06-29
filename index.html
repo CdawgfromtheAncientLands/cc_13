@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Display</title>
+    <style>
+        #loading {
+            display: none;
+        }
+        #error {
+            display: none;
+            color: red;
+        }
+        .product {
+            transition: opacity 0.5s;
+        }
+        #navigation {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <div id="error">Failed to load products.</div>
+    <div id="products"></div>
+    <div id="navigation">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
