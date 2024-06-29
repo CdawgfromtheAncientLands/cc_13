@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function displayProduct() {
         if (products.length === 0) return;
-
+        //produces an element for each product
         const product = products[currentIndex];
         productsContainer.innerHTML = `
             <div class="product" style="opacity: 0;">
