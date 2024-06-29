@@ -55,6 +55,22 @@ document.addEventListener('DOMContentLoaded', () => {
         navigationElement.style.display = products.length > 1 ? 'block' : 'none';
     }
 
+    function showLoading() {
+        loadingElement.style.display = 'block';
+    }
+
+    function hideLoading() {
+        loadingElement.style.display = 'none';
+    }
+
+    function showError() {
+        errorElement.style.display = 'block';
+    }
+
+    function hideError() {
+        errorElement.style.display = 'none';
+    }
+
 
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + products.length) % products.length;
